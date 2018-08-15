@@ -58,10 +58,10 @@ NSString * const kCTMediatorActionConfigCell = @"configCell";
         paramsToSend[@"message"] = message;
     }
     if (cancelAction) {
-        paramsToSend[@"cancelAction"] = cancelAction;
+        paramsToSend[@"cancelAction"] = cancelAction;//block
     }
     if (confirmAction) {
-        paramsToSend[@"confirmAction"] = confirmAction;
+        paramsToSend[@"confirmAction"] = confirmAction;//block
     }
     [self performTarget:kCTMediatorTargetA
                  action:kCTMediatorActionShowAlert
